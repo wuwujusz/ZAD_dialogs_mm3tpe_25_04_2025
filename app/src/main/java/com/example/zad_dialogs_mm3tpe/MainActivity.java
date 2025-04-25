@@ -35,10 +35,15 @@ public class MainActivity extends AppCompatActivity {
         Button przycisk1 = findViewById(R.id.but1);
         przycisk1.setOnClickListener(v -> showAlertDialog());
 
-
+        Button przycisk2 = findViewById(R.id.but2);
+        przycisk2.setOnClickListener(v -> reset());
 
     }
 
+    private void reset(){
+        TextView licznik = findViewById(R.id.counter1);
+        licznik.setText("Dane usunięto: 0 razy");
+    }
 
     private void showAlertDialog(){
 
